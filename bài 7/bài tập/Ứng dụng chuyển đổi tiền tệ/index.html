@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td>
+                <label><input type="number" id="amount"></label>
+            </td>
+            <td>
+                <label>
+                    <select name="" id="sl1">
+                        <option value="VND">VND</option>
+                        <option value="USD">USD</option>
+                        <option value="CENT">CENT</option>
+                    </select>
+                </label>
+            </td>
+            <td>
+                <label>
+                    <select name="" id="sl2">
+                        <option value="VND">VND</option>
+                        <option value="USD">USD</option>
+                        <option value="CENT">CENT</option>
+                    </select>
+                </label>
+            </td>
+        </tr>
+    </table>
+    <button style="background:red; color: white" onclick="result()" >Convert</button>
+    <script>
+        function result(){
+            let input =document.getElementById("amount").value;
+            let sl1 = document.getElementById("sl1").value;
+            let sl2 = document.getElementById("sl2").value;
+            if(sl1 === sl2){
+                document.getElementById("result").innerText = "Result : " + input + " " + sl2;
+            }
+            if(sl1 === "VND" && sl2 === "USD"){
+                document.getElementById("result").innerText = "Result : " + input / 23000 + " " + sl2 ;
+            }
+            if(sl1 === "VND" && sl2 === "CENT"){
+                document.getElementById("result").innerText = "Result : " + input *100/23 + " " + sl2;
+            }
+            if(sl1 === "USD" && sl2 === "VND"){
+                document.getElementById("result").innerText = "Result : " + input * 23000 + " " + sl2;
+            }
+            if(sl1 === "USD" && sl2 === "CENT"){
+                document.getElementById("result").innerText = "Result : " + input *100 + " " + sl2;
+            }
+            if(sl1 === "CENT" && sl2 === "USD"){
+                document.getElementById("result").innerText = "Result : " + input /100 + " " + sl2;
+            }
+            if(sl1 === "CENT" && sl2 === "VND"){
+                document.getElementById("result").innerText = "Result : " + input *23/100 + " " + sl2;
+            }
+        }
+    </script>
+    <p style="color: blue" id="result" onclick="result">Result : </p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.head{
+    border-bottom-style: dotted;
+}
+#age{
+    padding-right: 50%;
+}
+#range{
+    padding-right: 50%;
+}
+.boxtext{
+    padding-right: 100%;
+    padding-bottom: 150px;
+}
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.color{
+    background-color: grey;
+}

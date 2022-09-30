@@ -1,0 +1,24 @@
+#tb{
+    width: 50%;
+    font-family: arial, sans-serif;
+    border: 1px groove;
+    margin-left: 25%;
+}
+#vien{
+    border: 1px groove;
+    margin: 0px;
+}
+.head{
+    background-color: yellow;
+}
+#tb1{
+    width: 50%;
+    color: blue;
+    margin-left: 25%;
+}
+#tb2{
+    width: 50%;
+    font-family: arial, sans-serif;
+    border: 1px groove;
+    margin-left: 25%;
+}

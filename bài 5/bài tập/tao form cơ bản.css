@@ -1,0 +1,38 @@
+#form{
+    border-color: aqua;
+    border-width: 10px;
+    border-style: solid;
+}
+#hobby{
+    margin-left: 40px;
+}
+#hobby1{
+    margin-left: 100px;
+}
+#summit{
+    margin-left: 100px;
+}
+.form{
+    background-color: gold;
+}
+.h1{
+    color: blue;
+    background-color: deepskyblue;
+    border-style: solid;
+    border-color: gold;
+    border-width: 5px 5px 0px 5px;
+
+}
+#class{
+    margin-left: 70px;
+}
+#space{
+    margin: 5px;
+}
+#h1{
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+}

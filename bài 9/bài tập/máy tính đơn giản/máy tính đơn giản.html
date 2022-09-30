@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="maytinhdongian.css">
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan="4"><input type="text" id="window"></td>
+  </tr>
+  <tr>
+    <td><button onclick="nhap(this.value)" value="1">1</button></td>
+    <td><button onclick="nhap(2)">2</button></td>
+    <td><button onclick="nhap(3)">3</button></td>
+    <td><button onclick="nhap(this.value)" value="+">+</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="nhap(4)">4</button></td>
+    <td><button onclick="nhap(5)">5</button></td>
+    <td><button onclick="nhap(6)">6</button></td>
+    <td><button onclick="nhap(this.value)" value="-">-</button></td>
+  </tr>
+  <tr>
+  <td><button onclick="nhap(7)">7</button></td>
+  <td><button onclick="nhap(8)">8</button></td>
+  <td><button onclick="nhap(9)">9</button></td>
+  <td><button onclick="nhap(this.value)" value="*">x</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="xoa()">C</button></td>
+    <td><button onclick="nhap(this.value)" value="0">0</button></td>
+    <td><button onclick="bang()">=</button></td>
+    <td><button onclick="nhap(this.value)" value="/">/</button></td>
+  </tr>
+</table>
+<script>
+  function nhap(so){
+    document.getElementById("window").value +=so;
+  }
+  function bang(){
+    let ketqua="" +document.getElementById("window").value;
+    document.getElementById("window").value= eval(ketqua);
+  }
+  function xoa(){
+    document.getElementById("window").value=" ";
+  }
+</script>
+</body>
+</html>
