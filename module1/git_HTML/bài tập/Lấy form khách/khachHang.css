@@ -1,0 +1,37 @@
+ul{
+    list-style: none;
+    display: inline-block;
+}
+.info{
+    padding: 10px;
+    border-bottom: 1px black solid ;
+    margin-left: 25px;
+}
+table{
+    margin: 0 0 0.9em 0;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #dedede;
+    border-bottom: none;
+}
+th{
+    border-bottom: 1px solid #dedede;
+    text-align: left;
+}
+
+td{
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    width:15%;
+    text-align: center;
+}
+li:hover{
+    background-color: rgb(252, 233, 208);
+}
+li select:hover{
+    background-color: rgb(255, 236, 211);
+}
+table td:hover{
+    width: 20%;
+    background-color: antiquewhite;
+}
