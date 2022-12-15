@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3:hover{
+            color: rgb(255, 4, 4);
+        }
+        p, ul{
+            font-size: 15px;
+            color: rgb(245, 169, 27);
+        }
+        button:hover{
+            color: white;
+            background-color: black;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Tính chu vi hình tròn</h3>
+        <form action="" method="get">
+            <p>
+                Công thức: C = PI*r*2 = D * PI
+                Trong đó: 
+                    <ul>
+                        <li>PI = 3.14</li>
+                        <li>r = bán kính</li>
+                        <li>D = Đường kính</li>
+                        <li>C: chu vi</li>
+                    </ul>
+            </p>
+            <input type="text" name="Str" id="R" placeholder="Nhập R: " >
+            <button type="button" onclick="Result()">Result</button>
+        </form>
+    </section>
+</body>
+</html>
+<script src="index.js"></script>
