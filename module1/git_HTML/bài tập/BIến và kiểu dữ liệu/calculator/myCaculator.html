@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <style>
+        section{
+            display: inline-block;
+            background-color: rgb(187, 244, 244);
+            padding: 10px;
+            margin-left: 30%;
+        }
+        button, input{
+            padding: 5px;
+            margin: 5px;
+        }
+        button:hover{
+            background-color: rgb(212, 255, 0);
+            color: black;
+            transition: all 500ms ease;
+            border-radius: 10px;
+        }
+        h1:hover{
+            color: rgb(225, 12, 241);
+            transition: all 500ms ease;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 style="text-align: center;">Caculator</h1>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" name="number1" id="n1" placeholder="number 1">
+                    <input type="text" name="number2" id="n2" placeholder="number 2">
+                </td>
+            </tr>
+        </table>
+        <button type="button" onclick="add()">Addition+</button>
+        <button type="button" onclick="sub()">Subtraction-</button>
+        <button type="button" onclick="mul()">Multiplication*</button>
+        <button type="button" onclick="div()">Division/</button>
+        <p id="result" style="color: blue;"></p>
+    </section>
+</body>
+</html>
+<script src="./my.js"></script>
