@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            box-shadow: 0px 0px 2px rgb(31, 209, 0);
+        }
+        button{
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            transition: all 500ms ease;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="Weight">Enter Weight</label><br>
+                        <input type="text" name="" id="Weight">
+                        
+                    </td>   
+                    <td>
+                        <label for="Height">Enter Height</label><br>
+                        <input type="text" name="" id="Height">
+                        <button type="button" onclick="done()">Submit</button>
+                    </td>               
+                </tr>
+            </table>
+        </form>
+       
+        <p id="text" style="color: blue;"></p>
+    </section>
+</body>
+</html>
+<script src="index.js"></script>
