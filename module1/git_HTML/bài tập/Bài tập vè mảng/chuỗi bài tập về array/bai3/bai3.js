@@ -1,6 +1,6 @@
 function bai3() {
   let mangSo = [];
-  let MAX = 0,
+  let max = 0,
     viTri = 0,
     tongTB = 0;
     let giaTri = new Array();
@@ -10,14 +10,14 @@ function bai3() {
     }
     document.writeln("Mảng số = [" + mangSo + "]<br/>");
     for (let i = 0; i < mangSo.length; i++) {
-        if(mangSo[i] > MAX){
-            MAX = mangSo[i];
+        if(mangSo[i] > max){
+            max = mangSo[i];
             viTri = i;
         }
         tongTB += mangSo[i]
     }
     tongTB = tongTB/mangSo.length;
 
-    document.writeln("Phần tử lớn nhất trong mảng là "+ MAX + " tại vị trí thứ ["+viTri+"]<br/>")
+    document.writeln("Phần tử lớn nhất trong mảng là "+ max + " tại vị trí thứ ["+viTri+"]<br/>")
     document.write("Tổng trung bình của các số là "+tongTB)
 }
