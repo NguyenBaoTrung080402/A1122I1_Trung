@@ -5,7 +5,7 @@ function bai1() {
   let a = new Array();
   a = prompt("Nhập số lượng phần từ của mảng: ")
   for (let i = 0; i < a; i++) {
-    mangso[i] = Number(prompt("Nhập vào mảng số: "));
+    mangSo[i] = Number(prompt("Nhập vào mảng số: "));
   }
   document.writeln("Mảng số = [" + mangSo + "]<br/>");
   for (let i = 0; i < mangSo.length; i++) {
