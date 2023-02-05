@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+    </p>
+    <input type="button" value="Chu vi" onclick="circle_area()">
+    <input type="button" value="Diện tích" onclick="diameter_of_a_circle()">
+    <script>
+        function circle_area(){
+            let sum;
+            do{
+            let r = prompt("Enter R: ");
+                if(r < 0 || r == ""){
+                    alert("Enter again please");
+                }else{
+                    sum = r*2*3.14
+                    alert("Vallue of sum: "+sum);
+                }
+            }while(r<0);
+            return sum;
+        }
+        function diameter_of_a_circle(){
+            let sum;
+            do{
+            let r = prompt("Enter R: ");
+                if(r < 0 || r == ""){
+                    alert("Enter again please");
+                }else{
+                    sum = r*r*3.14
+                    alert("Vallue of sum: "+sum);
+                }
+            }while(r<0);
+            return sum;
+        }
+    </script>
+</body>
+</html>

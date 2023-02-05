@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+    </p>
+    <input type="button" value="bai8" onclick="bai8()">
+    <script>
+        function reverseArray(arr) {
+            return arr.reverse();
+        }
+        function bai8(){
+            let mangSo = []
+            let a = new Array();
+            a = prompt("Nhap gia tri cua mang: ")
+            for (let i = 0; i < a; i++) {
+                mangSo[i] = Number(prompt("Nhập vào mảng số: "))
+            }
+            document.write("Mảng số = [" + mangSo + "]<br/>");
+            let reve = reverseArray(mangSo)
+            document.write("mảng sau khi đổi: ["+ reve+" ]")
+        }
+
+    </script>
+</body>
+</html>

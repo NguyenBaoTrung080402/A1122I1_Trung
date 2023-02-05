@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    </p>
+    <input type="button" value="bai7" onclick="bai7()">
+    <script>
+        function swapNumber(a, b){
+            return[b , a]
+        }
+        function bai7(){
+            let a = prompt("Enter number a:")
+            let b = prompt("Enter number b:")
+            let result = swapNumber(a, b)
+            alert(result)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>
+            Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa
+            vào. Gọi hàm vừa xây dựng được.
+        </p>
+        <input type="button" value="bai3" onclick="bai3()">
+        <script>
+        function giai_thua(n){
+            if (n == 1) {
+                return 1;
+            }
+        return n * giai_thua(n - 1);
+        }
+        function bai3(){
+            let result = giai_thua(5);
+            alert("giai thừa của nó là: "+result);
+        }
+    </script>
+    </body>
+</html>

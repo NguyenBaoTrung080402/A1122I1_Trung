@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+    </p>
+    <input type="button" value="bai5" onclick="bai5()">
+    <script>
+        function check(a, b, c){
+          return Math.min(a, b, c);
+          // Math.min là 1 thư viện của js
+        }
+        function bai5(){
+            let a = prompt("Nhập giá trị của a: ")
+            let b = prompt("Nhập giá trị của b: ")
+            let c = prompt("Nhập giá trị của c: ")
+            
+            let result = check(a, b, c);
+            alert(result);
+        }
+    </script>
+</body>
+</html>
