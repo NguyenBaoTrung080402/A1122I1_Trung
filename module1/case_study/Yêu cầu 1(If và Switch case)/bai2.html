@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Bài 2: Viết chương trình kiểm tra một ký tự trong bảng chữ cái tiếng anh là nguyên âm hay phụ âm. Ký tự là bất kỳ được nhập từ bàn phím. Các ký tự nguyên âm bao gồm: 'o', 'u', 'i', 'a', 'e' hoặc 'O', 'U', 'I', 'A', 'E'
+
+    </p>
+    <script>
+        let checkVowel = ()=>{
+            let text = prompt("Enter the one word english you know: ");
+            switch (text) {
+                case 'o':
+                case 'i':
+                case 'a':
+                case 'e':
+                case 'O':
+                case 'U':
+                case 'I':
+                case 'A':
+                case 'E':
+                document.write(`"${text}" là nguyên âm.`);
+                break;
+            default:
+                document.write(`"${text}" là phụ âm.`);
+            break;
+ 
+            }
+        };
+        checkVowel();
+    </script>
+</body>
+</html>

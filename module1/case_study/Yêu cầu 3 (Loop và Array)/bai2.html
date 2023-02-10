@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        Cho 2 mảng A và B chứa số nguyên. Tìm ra một mảng đã được sắp xếp chứa các phần tử xuất hiện trong mảng B nhưng lại không xuất hiện A
+Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện
+
+    </p>
+<script>
+  function difference(A, B) {
+  let result = [];
+  for (let i = 0; i < B.length; i++) {
+    if (A.indexOf(B[i]) === -1) {
+      result.push(B[i]);
+    }
+  }
+  return result.sort();
+}
+
+let A = [1, 2, 3, 4, 5];
+let B = [1, 2, 4, 6, 7];
+
+document.write(difference(A, B));
+</script>
+</body>
+</html>
