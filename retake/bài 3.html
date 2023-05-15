@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input=prompt("nhập ngày tháng vào: ");
+    let string = input.toString();
+    let month= string.slice(0,3);
+    let thang=parseInt(month);
+    let year= string.slice(3,7);
+    let nam =parseInt(year);
+    if (nam%4==0){
+        switch (thang){
+            case 1:
+                alert("tháng này có: 31");
+                break;
+            case 2:
+                alert("tháng này có: 29");
+                break;
+            case 3:
+                alert("tháng này có: 31");
+                break;
+            case 4:
+                alert("tháng này có: 30");
+                break;
+            case 5:
+                alert("tháng này có: 31");
+                break;
+            case 6:
+                alert("tháng này có: 30");
+                break;
+            case 7:
+                alert("tháng này có: 31");
+                break;
+            case 8:
+                alert("tháng này có: 31");
+                break;
+            case 9:
+                alert("tháng này có: 30");
+                break;
+            case 10:
+                alert("tháng này có: 31");
+                break;
+            case 11:
+                alert("tháng này có: 30");
+                break;
+            case 12:
+                alert("tháng này có: 31");
+                break;
+        }
+    }
+    else {
+        switch (thang){
+            case 1:
+                alert("tháng này có: 31");
+                break;
+            case 2:
+                alert("tháng này có: 28");
+                break;
+            case 3:
+                alert("tháng này có: 31");
+                break;
+            case 4:
+                alert("tháng này có: 30");
+                break;
+            case 5:
+                alert("tháng này có: 31");
+                break;
+            case 6:
+                alert("tháng này có: 30");
+                break;
+            case 7:
+                alert("tháng này có: 31");
+                break;
+            case 8:
+                alert("tháng này có: 31");
+                break;
+            case 9:
+                alert("tháng này có: 30");
+                break;
+            case 10:
+                alert("tháng này có: 31");
+                break;
+            case 11:
+                alert("tháng này có: 30");
+                break;
+            case 12:
+                alert("tháng này có: 31");
+                break;
+        }
+    }
+</script>
+</body>
+</html>

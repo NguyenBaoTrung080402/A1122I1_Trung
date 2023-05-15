@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="game()">Chơi</button>
+<script>
+ function game() {
+     let nummin = +prompt("nhập giá trị min: ");
+     let nummax = +prompt("nhập giá trị max: ");
+     let a = Math.floor(Math.random() * (nummax - nummin + 1)) + nummin;
+     do {
+         var count = +prompt("nhập giá trị cần đoán: ");
+         if (count < a) {
+             alert("số cần đoán là số lớn hơn: ");
+         }
+         else {
+             if (count > a) {
+                 alert("số bạn cần là số nhỏ hơn: ");
+             }
+         }
+     }
+     while (count != a)
+             alert("chúc mừng bạn đã đoán đúng");
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=+prompt("nhập số đầu tiên");
+  let b=+prompt("nhập số thứ 2");
+  let no1=a;
+  let no2=b;
+  let sum=a+b;
+  for (i=1;i<=18;i++){
+    sum+=no2+no1;
+    no1=no2;
+    no2=no1+no2;
+  }
+  alert(sum);
+</script>
+</body>
+</html>

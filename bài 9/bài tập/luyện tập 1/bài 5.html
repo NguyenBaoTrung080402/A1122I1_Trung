@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let ktr=+prompt("nhập điểm bài kiểm tra: ");
+  let giuaki=+prompt("nhập điểm thi giữa kì: ");
+  let cuoiki=+prompt("nhập điểm thi cuối kì: ");
+  let trungbinh=(ktr+giuaki*2+cuoiki*3)/6
+  if (trungbinh>=8){
+    alert("học sinh giỏi");
+  }
+  else {
+    if (trungbinh>=6.5){
+      alert("học sinh khá");
+    }
+    else {
+        alert("học sinh yếu");
+    }
+  }
+</script>
+</body>
+</html>

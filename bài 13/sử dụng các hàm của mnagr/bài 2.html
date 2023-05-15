@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num=+prompt("nhập 1 chuỗi số bất kì: ");
+  let string= num.toString();
+  let arr=[string[0]];
+  for (i=0;i<=string.length;i++){
+      if ((string[i]%2==0)&&(string[i+1]%2==0)){
+          arr.push('-',string[i+1]);
+      }
+      else {
+          arr.push(string[i+1]);
+      }
+  }
+  document.write(arr.join(''));
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let money=+prompt("nhập số tiền đã vay(vnd): ");
+  let month=+prompt("nhập số tháng vay: ");
+  let lai=money;
+  for (i=1;i<=month;i++){
+    lai+=lai*0.05;
+  }
+  alert("lãi tổng cộng là: "+(lai-money));
+</script>
+</body>
+</html>

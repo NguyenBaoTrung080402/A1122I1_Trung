@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=+prompt("nhập số chữ điện: ");
+  if (a<10){
+    alert("tiền điện tháng này là: "+(a*20000));
+  }
+  else {
+      if (a<30){
+          alert("tiền điện tháng này là: "+(200000+(a-10)*30000));
+      }
+      else {
+          alert("tiền điện tháng này là "+(800000+(a-30)*40000));
+      }
+  }
+</script>
+</body>
+</html>

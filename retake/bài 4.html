@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align: center">Quản lí Công Nhân</h1>
+<input type="text" placeholder="Nhập Họ và Tên" id="name">
+<input type="text" placeholder="Nhập Ngày sinh" id="date">
+<input type="text" placeholder="Nhập Địa chỉ" id="dress">
+<input type="text" placeholder="Nhập lương" id="salary">
+<input type="text" placeholder="NHập chức vụ" id="job">
+<button onclick="themMoi()">Thêm mới</button>
+<br>
+<span>Số lượng sản phẩm: </span>
+<span id="soluong"></span>
+<div id="display"></div>
+<script>
+  class Product {
+    constructor(name, date, dress,salary,job ) {
+      this.date =date;
+      this.dress = dress;
+      this.name = name;
+      this.salary = salary;
+      this.job = job;
+    }
+
+    setDate(date) {
+      this.date = date;
+    }
+
+
+    setName(name) {
+      this.name = name;
+    }
+
+
+    setDress(dress) {
+      this.dress = dress;
+    }
+    setSalary(salary){
+      this.salary = salary;
+    }
+
+    setJob(job){
+        this.job = job;
+    }
+
+
+    getDate() {
+      return this.date;
+    }
+
+
+    getName() {
+      return this.name;
+    }
+
+
+    getDress() {
+      return this.dress;
+    }
+
+    getSalary(){
+      return this.salary;
+    }
+
+    getJob(){
+        return this.job;
+    }
+  }
+
+  let product1 = new Product( "Trương Tấn C", "11-11-1997" , "Quảng Nam" , 1000, "Abc");
+  let product2 = new Product( "Trương Tấn B", "11-11-1998" , "Đà Nẵng" , 1000, "Abc");
+  let product3 = new Product( "Trương Tấn A", "11-11-1999" , "Huế" , 1000, "Abc");
+  let products = [product1, product2, product3,];
+  display(products);
+
+  function display(products) {
+    let data = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Họ Và Tên</th>\n' +
+            '        <th>Địa chỉ</th>\n' +
+            '        <th>Lương</th>\n' +
+            '        <th>Chức vụ</th>\n' +
+            '        <th>Delete</th>\n' +
+            '        <th>Edit</th>\n' +
+            '    </tr>';
+    for (let i = 0; i < products.length; i++) {
+      data += '<tr>\n' +
+          '        <td>' + (i + 1) + '</td>\n' +
+          '        <td>' + products[i].getName() + '</td>\n' +
+          '        <td>' + products[i].getDate() + '</td>\n' +
+          '        <td>' + products[i].getDress() + '</td>\n' +
+          '         <td>' + products[i].getSalary() + '</td>\n' +
+          '        <td>' + products[i].getJob() + '</td>\n' +
+          '        <td><input type="button" value="Delete" onclick="deleteProduct(' + i + ')"></td>\n' +
+          '        <td><input type="button" value="Edit" onclick="editProduct(' + i + ')"></td>\n' +
+          '    </tr>';
+    }
+    data += '</table>';
+    document.getElementById("display").innerHTML = data;
+    document.getElementById("soluong").innerHTML = products.length;
+  }
+
+  function deleteProduct(index) {
+    let isDelete = confirm("Bạn có muốn xoá sản phẩm " + products[index].getName());
+    if (isDelete) {
+      products.splice(index, 1);
+    }
+    display(products);
+  }
+
+  function themMoi() {
+    let name = document.getElementById("name").value;
+    let date = document.getElementById("date").value;
+    let dress = document.getElementById("dress").value;
+    let salary = document.getElementById("salary").value;
+    let job = document.getElementById("job").value;
+    let product = new Product(name, date, dress,salary,job );
+    if (name != "" && date != "" && dress != "" && salary != "" && job != "") {
+      products.push(product)
+    } else {
+      alert("mời nhập đầy đủ thông tin của sản phẩm !!!")
+    }
+    display(products)
+    document.getElementById("name").value= "";
+    document.getElementById("date").value = "";
+    document.getElementById("dress").value = "";
+    document.getElementById("salary").value = "";
+    document.getElementById("job").value = "";
+  }
+  function editProduct(index) {
+    let newName = prompt("Nhập vào mã Tên mới : " , products[index].getName());
+    let newDate = prompt("Nhập vào ngày sinh mới : " , products[index].getDate());
+    let newDress = prompt("Nhập vào địa chỉ mới : " , products[index].getDress());
+    let newSalary = prompt("Nhập vào mức lương : " , products[index].getSalary());
+    let newJob = prompt("Nhập vào chức vụ mới : " , products[index].getJob());
+    let product = new Product(newName, newDate, newDress, newSalary, newJob);
+    products[index] = product;
+    display(products)
+
+  }
+
+</script>
+</body>
+</html>

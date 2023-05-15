@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=+prompt("nhập số tiền cần vay");
+  let b=+prompt("nhập số tháng cần vay");
+  let c=+prompt("nhập lãi xuất hàng tháng");
+  let tong=a;
+  for (i=1;i<=b;i++){
+    tong +=tong*c;
+  }
+  alert("lãi suất tổng cộng"+(tong-a));
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=+prompt("nhập thu nhập cá nhân: ");
+    if (a<5000000) {
+        alert("thuế cần nộp là" + a * 0.05);
+    }
+    else {
+        if (a<10000000){
+            alert("thuế cần nộp là: "+(250000+(a-5000000)*0.1));
+        }
+        else {
+            alert("tiền thuế phải nộp là: "+(1650000+(a-10000000)*0.15));
+        }
+    }
+</script>
+</body>
+</html>

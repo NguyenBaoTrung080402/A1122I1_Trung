@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let minute=+prompt("nhập số phút gọi điện: ");
+    if (minute<=10){
+        alert("cước điện thoại là: "+minute*400);
+    }
+    else {
+        if (minute<=30){
+            alert("cước điện thoại là: "+(4000+(minute-10)*600));
+        }
+        else{
+            alert("cước điện thoại là: "+(10000+(minute-30)*800));
+        }
+    }
+</script>
+</body>
+</html>

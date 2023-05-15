@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=+prompt("nhập chuỗi kí tự vào đây");
+    let string= num.toString();
+    let upper='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let lower='abcdefghijklmnopqrstuvwxyz';
+    let arr=[];
+    for (i=0;i<=string.length;i++){
+        for (x=0;x<=upper.length;x++){
+            if (string.indexOf(i)===upper(x)){
+                arr.push(lower(x));
+            }
+            else {
+                for (j=0;j<=lower.length;j++){
+                    if (string.indexOf(i)===lower(j)){
+                        arr.push(upper(j));
+                    }
+                }
+            }
+        }
+    }
+    document.write(arr);
+</script>
+</body>
+</html>

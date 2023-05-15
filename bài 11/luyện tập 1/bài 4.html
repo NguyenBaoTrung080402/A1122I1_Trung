@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=+prompt("nhập số đầu tiên");
+  let b=+prompt("nhập số thứ 2");
+  if (a%5==0){
+      alert("số đầu tiên trong dãy chia hết cho 5 là : "+a);
+  }
+  else {
+    if (b%5==0){
+      alert("số đầu tiên trong dãy chia hết cho 5 là : "+b);
+    }
+    else {
+      let no1=a;
+      let no2=b;
+      for (i=1;i<=18;i++){
+        if ((no1+no2)%5==0){
+            alert("số đầu tiên trong dãy chia hết cho 5 là: "+(no1+no2));
+            break;
+        }
+        else {
+            no1=no2;
+            no2=no1+no2;
+        }
+      }
+      alert("không có số nào trong dãy chia hết cho5");
+    }
+  }
+</script>
+</body>
+</html>

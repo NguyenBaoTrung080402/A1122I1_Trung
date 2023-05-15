@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=+prompt("nhập số đầu tiên");
+  let b=+prompt("nhập số thứ 2");
+  document.write(a);
+  document.write('<br>');
+  document.write(b);
+  let no1=a;
+  let no2=b;
+  for (i=1;i<=18;i++){
+      document.write(no1+no2);
+      document.write('<br>');
+      no1=no2;
+      no2=no1+no2;
+  }
+</script>
+</body>
+</html>
